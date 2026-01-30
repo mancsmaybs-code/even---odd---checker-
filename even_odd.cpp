@@ -5,16 +5,12 @@ int main() {
     int number;
 
     cout << "Enter a number: ";
-
-    if (!(cin >> number)) {
-        cout << "Invalid input. Please enter an integer." << endl;
-        return 0;
-    }
+    cin >> number;
 
     if (number % 2 == 0) {
-        cout << number << " is an even number." << endl;
+        cout << "The number is even." << endl;
     } else {
-        cout << number << " is an odd number." << endl;
+        cout << "The number is odd." << endl;
     }
 
     return 0;
